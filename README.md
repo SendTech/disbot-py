@@ -1,4 +1,4 @@
-# Teo Bot
+# SendTech Discord Bot
 
 Un bot de discord con muchas peculiaridades escrito en python
 
@@ -8,13 +8,13 @@ Un bot de discord con muchas peculiaridades escrito en python
 
 ## Explicación y Uso
 
-El entrono virtual esta creado con [pipenv](https://pipenv-es.readthedocs.io/es/latest/) el codigo esta formateado con autopep8 los commits son hechos con [commitizen](https://github.com/commitizen/cz-cli) 
+El entrono virtual esta creado con **py -m venv env**  el codigo esta formateado con autopep8 los commits son hechos con [commitizen](https://github.com/commitizen/cz-cli) 
 
 ---
 
 ### Uso
 
-Renombramos el archivo .env.example por .env y dentro de el borramos yourtoken y pegas tu token obtenido en el portal de desarrolladores de discord luego ejecutas pipenv install y listo :D 
+Creamos el archivo.env y dentro de el escribimos BOT_TOKEN = y pegas tu token obtenido en el portal de desarrolladores de discord luego ejecutas pip install -r requirements.txt y listo :D 
 
 ---
 
