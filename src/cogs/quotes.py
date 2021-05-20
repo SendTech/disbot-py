@@ -7,7 +7,7 @@ class InspireCog(commands.Cog, name="quote_command"):
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command(name="quote",
+    @commands.command(name="cita",
                       usage='Usalo cuando no estes inspirado y quieras ayuda',
                       description='Muestra frases de varios filósofos que te ayudan a inspirarte')
     async def inspire(self, ctx):
@@ -23,7 +23,7 @@ class InspireCog(commands.Cog, name="quote_command"):
         embed = discord.Embed(
             title="Cita Inspiradora",
             description=quote,
-            color=discord.Color.random()
+            color = discord.Color.blue()
         )
         embed.set_footer(text=author)
         await ctx.send(embed=embed)

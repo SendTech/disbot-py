@@ -12,17 +12,15 @@ class invitacion_command(commands.Cog):
 		)
 	async def invitar(self,ctx):
 		description_content = """
-		Quieren unirse a SENDERO TECNOLOGICO, 
-en este server intentamos que tu, yo y todos aprendemos juntos con talleres, videos de youtube de la comunidad, entre otros. 
+  Somos programadores o aprendizes queriendo enseñar lo que sabemos y aprender de los que enseñan.
 
-:computer:   https://senderotecnologico.gq/ :computer:
-o solo  https://senderotecnologico.gq/
+  https://discord.gg/4FUtbhatAg
 
 		"""
 		embed = discord.Embed(
-			title = "Invitados",
+			title = "Invitacion a SENDERO TECNOLOGICO",
 			description = description_content,
-			color = discord.Color.random()
+			color = discord.Color.blue()
 			)
 		await ctx.send(embed=embed)
 		

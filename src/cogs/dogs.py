@@ -25,8 +25,8 @@ class dogs_commands(commands.Cog):
             api_status = answer['status']
             image_link = answer['message']
             embed = discord.Embed(
-                title="Un hermoso perrito",
-                color=discord.Color.random()
+                title="Ohhh, que lindo perrito",
+                color = discord.Color.blue()
             )
             embed.set_image(url=image_link)
             await ctx.send(embed=embed)

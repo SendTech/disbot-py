@@ -1,8 +1,10 @@
 # SendTech Discord Bot
 
-Un bot de discord con muchas peculiaridades escrito en python
+El bot de discord para la comunidad de Sendero Tecnológico
 
 ![Discord](https://www.fullesports.com/wp-content/uploads/2018/05/Optimized-discord-logo.jpg)
+
+# LINK DE LA COMUNIDAD [Discord Server](https://linktr.ee/senderotecnologico)
 
 ---
 
