@@ -23,7 +23,7 @@ class InspireCog(commands.Cog, name="quote_command"):
         embed = discord.Embed(
             title="Cita Inspiradora",
             description=quote,
-            color = discord.Color.blue()
+            color = 0x486F8C
         )
         embed.set_footer(text=author)
         await ctx.send(embed=embed)

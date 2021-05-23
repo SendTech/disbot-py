@@ -15,14 +15,14 @@ class avatar_command(commands.Cog):
         if member is None:
             embed = discord.Embed(
                 title=" El comando usado deberia ser **!avatar [miembro]**",
-                color = discord.Color.blue(),
+                color = discord.color.red(),
                 footer=ctx.message.created_at
             )
             await ctx.send(embed=embed)
         else:
             embed2 = discord.Embed(
                 title=f"!Avatar de {member} (ufff y estas guapo)",
-                color = discord.Color.blue(),
+                color = 0x486F8C,
                 timestamp=ctx.message.created_at
             )
             embed2.add_field(

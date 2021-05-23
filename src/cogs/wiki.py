@@ -21,7 +21,7 @@ class wiki(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print("\n Wikipedia Cog has been loaded\n-----")
+        print("\nWikipedia Cog has been loaded\n-----")
 
     @commands.command()
     async  def  wiki(self,ctx,* ,args):
@@ -30,7 +30,8 @@ class wiki(commands.Cog):
           wikipedia.set_lang("es")
           ny = wikipedia.page(args)
           embed = discord.Embed(title=f"Resultados para {ny.title}",
-          description=f"{ny.title}",timestamp=datetime.datetime.utcnow(),color=discord.Color.random())
+          description=f"{ny.title}",timestamp=datetime.datetime.utcnow(),
+          color = 0x486F8C )
           embed.set_thumbnail(url="https://media.tenor.com/images/5630f15a78c91310d9d8d1ffcac7e124/tenor.gif")
           result = wikipedia.summary(args,sentences=3)
           embed.add_field(name="Contenido de busqueda", value=f"{result}", inline=True)
@@ -41,7 +42,7 @@ class wiki(commands.Cog):
       except:
          embed = discord.Embed(
            title=f" Error 404, busca algo que exista para {args} ",
-           color = discord.Color.blue()
+           color=discord.Color.red()
            )
          await ctx.send(embed=embed)
         

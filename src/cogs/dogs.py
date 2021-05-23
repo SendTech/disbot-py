@@ -14,7 +14,7 @@ class dogs_commands(commands.Cog):
     )
     async def dogs(self, ctx):
         embed2 = discord.Embed(
-            title="Puede tardar un momento :clock:",
+            title="Puede tardar un momento :alarm_clock:",
             color=discord.Color.red()
         )
         await ctx.send(embed=embed2)
@@ -25,8 +25,8 @@ class dogs_commands(commands.Cog):
             api_status = answer['status']
             image_link = answer['message']
             embed = discord.Embed(
-                title="Ohhh, que lindo perrito",
-                color = discord.Color.blue()
+                title="Ohhh, que lindo perrito \U0001f436",
+                color = 0x486F8C
             )
             embed.set_image(url=image_link)
             await ctx.send(embed=embed)

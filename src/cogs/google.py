@@ -3,10 +3,6 @@ from discord.ext import commands
 import datetime
 from googlesearch import search
 
-
-
-
-
 class google(commands.Cog):
 
     def __init__(self, bot):
@@ -16,7 +12,7 @@ class google(commands.Cog):
 
     @commands.Cog.listener()
     async def on_ready(self):
-        print("\n Google Cog has been loaded\n-----")
+        print("Google Cog has been loaded\n-----")
 
     @commands.command()
     async  def  google(self,ctx,* ,args):
@@ -32,13 +28,14 @@ class google(commands.Cog):
           results = search(args, tld=tld, lang=lang, num=num, start=start, stop=stop, pause=pause)
           
           embed = discord.Embed(title=f"Resultados para {args} desde google",
-          description=f"",timestamp=datetime.datetime.utcnow(),color=discord.Color.random())
+          description=f"",timestamp=datetime.datetime.utcnow(),
+          color = 0x486F8C)
           embed.set_thumbnail(url="")
           
          
           
-          embed.set_footer(text="Solicitado por: {}".format(ctx.author.display_name))
-          embed.set_author(name="AlexanderG", icon_url="https://cdn.discordapp.com/avatars/809827305295314967/babea11271bbf5a89d5bf15220e7c278.webp?size=1024")
+          embed.set_footer(text="by {}".format(ctx.author.display_name))
+          embed.set_author(name="SendTech", icon_url="https://cdn.discordapp.com/avatars/805234023550156840/b337be9357f3aac1e498fad42634816d.png?size=128")
           await ctx.send(embed=embed)
           for r in results:
             await ctx.send(r)

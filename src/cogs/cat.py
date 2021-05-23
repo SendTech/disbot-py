@@ -12,7 +12,7 @@ class cat_command(commands.Cog):
 	)
 	async def cat(self,ctx):
 		embed2 = discord.Embed(
-			title="Puede tardar un momento :clock:",
+			title="Puede tardar un momento :alarm_clock:",
 			color=discord.Color.red()
 		)
 		await ctx.send(embed = embed2)
@@ -28,7 +28,7 @@ class cat_command(commands.Cog):
 			embed = discord.Embed(
 				title=message,
 				description=fact,
-				color = discord.Color.blue(),
+				color = 0x486F8C,
 			)
 			embed.set_footer(text=api_status)
 			embed.set_author(

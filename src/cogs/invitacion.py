@@ -18,9 +18,9 @@ class invitacion_command(commands.Cog):
 
 		"""
 		embed = discord.Embed(
-			title = "Invitacion a SENDERO TECNOLOGICO",
+			title = "Invitacion a SendTech Community",
 			description = description_content,
-			color = discord.Color.blue()
+			color = 0x486F8C
 			)
 		await ctx.send(embed=embed)
 		

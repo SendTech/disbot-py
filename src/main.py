@@ -7,8 +7,8 @@ from keep_alive import live
 DISCORD_TOKEN = config("BOT_TOKEN")
 
 # Description and basic configuration
-description = "Un Bot de Ayuda para la Comunidad de Sendero Tecnológico"
-prefix = "!"
+description = "Un Bot de la Comunidad de Sendero Tecnológico"
+prefix = "st!","!"
 bot = commands.Bot(command_prefix=prefix, description=description, help_command=None)
 
 
@@ -33,16 +33,17 @@ async def help(ctx):
     cats: Muestra anécdotas sobre gatos.
     wiki: Realiza una busqueda en la wikipedia.
     google: Realiza una busqueda en google.
-    yt: Realiza una busqueda en youtube 
-    joke: te cuenta un chistesito. 
+    yt: Realiza una busqueda en youtube.
+    joke: te cuenta un chistesito. \n
     hecho por los configuradores de Sendero Tecnologico.
     """
     embed = discord.Embed(
-      title = 'El comando de ayuda de este Hermoso bot',
+      title = 'El comando de ayuda de este bot',
       description = miDescripcion,
-      color = discord.Color.blue(),
+      color = 0x486F8C,
       footer=ctx.message.created_at
     )
+
     await ctx.send(embed = embed)
 
 

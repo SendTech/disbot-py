@@ -5,13 +5,17 @@ class hola_command(commands.Cog):
 	def __init__(self,bot):
 		self.bot = bot
 
-	@commands.command(name="hola")
+	@commands.command(
+    name="hola"
+    )
 	async def hola(self,ctx):
 		embed = discord.Embed(
-			title="Hola ¿Que tal?, que estas haciendo?",
+			title="👋Hola ¿Que tal?, que estas haciendo?",
 			description="Nota: Estoy Vivo :shushing_face: | Por suerte.",
-			color = discord.Color.blue()
+			color = 0x486F8C
 		)
 		await ctx.send(embed=embed)
+
 def setup(bot):
 	bot.add_cog(hola_command(bot))
+
