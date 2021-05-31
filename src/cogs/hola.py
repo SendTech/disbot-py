@@ -1,3 +1,4 @@
+
 from discord.ext import commands
 import discord
 
@@ -18,4 +19,3 @@ class hola_command(commands.Cog):
 
 def setup(bot):
 	bot.add_cog(hola_command(bot))
-
