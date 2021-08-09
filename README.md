@@ -1,6 +1,6 @@
 # SendTech Discord Bot
 
-El bot de discord para la comunidad de Sendero Tecnológico
+Te regalamos la base para tu bot de discord con pythob
 
 ![Discord](https://www.fullesports.com/wp-content/uploads/2018/05/Optimized-discord-logo.jpg)
 
