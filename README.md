@@ -1,4 +1,3 @@
-=\
 # SendTech Discord Bot
 
 Te regalamos la base para tu bot de discord con python
