@@ -1,6 +1,7 @@
+=\
 # SendTech Discord Bot
 
-Te regalamos la base para tu bot de discord con pythob
+Te regalamos la base para tu bot de discord con python
 
 ![Discord](https://www.fullesports.com/wp-content/uploads/2018/05/Optimized-discord-logo.jpg)
 
